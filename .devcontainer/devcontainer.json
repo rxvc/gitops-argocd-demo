@@ -1,6 +1,6 @@
 {
 	"name": "workshop-environment",
-	"image": "ghcr.io/rxvc/platform-engineering-assets/platform-devcontainer:1.0.0",
+	"image": "quay.io/akuity/argo-cd-learning-assets/akuity-devcontainer:0.2.5",
 
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
