@@ -14,7 +14,7 @@ kubectx k3d-dev | tee -a ~/.status.log
 # Install Argo CD using Helm
 helm repo add argo https://argoproj.github.io/argo-helm | tee -a  ~/.status.log 
 helm repo update | tee -a  ~/.status.log 
-helm install argocd argo/argo-cd --version 8.0.2 --namespace argocd --create-namespace --set server.service.type="NodePort" --set server.service.nodePortHttps=30179 --set configs.cm."kustomize\.buildOptions"="--enable-helm" --set configs.cm."application\.sync\.impersonation\.enabled"="true" | tee -a  ~/.status.log 
+helm install argocd argo/argo-cd --version 9.0.3 --namespace argocd --create-namespace --set server.service.type="NodePort" --set server.service.nodePortHttps=30179 --set configs.cm."kustomize\.buildOptions"="--enable-helm" --set configs.cm."application\.sync\.impersonation\.enabled"="true" | tee -a  ~/.status.log 
 
 
 
